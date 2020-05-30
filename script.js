@@ -1,12 +1,13 @@
-const cubeContainer = document.querySelector(".cube-container");
-
-cubeContainer.addEventListener("click", () => {
-    if (event.target.classList.contains("cube")) {
-        let color = event.target.style.backgroundColor;
-        if (color === "blue")
-            event.target.style.backgroundColor = 'red';
-        else
-            event.target.style.backgroundColor = 'blue';
+document.querySelector(".cube-container").addEventListener("click", () => {
+    if (event.target.classList.contains('cube')) {
+        if (event.target.classList.contains('blue')) {
+            event.target.classList.add('red');
+            event.target.classList.remove('blue');
+        }
+        else {
+            event.target.classList.add('blue');
+            event.target.classList.remove('red');
+        }
     }
 });
 

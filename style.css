@@ -6,8 +6,15 @@
 .cube {
     width: calc((100% / 3) - (1rem /2));
     height: 200px;
-    background-color: blue;
     margin-right: 0.5rem;
+}
+
+.cube.blue {
+    background-color: blue;
+}
+
+.cube.red {
+    background-color: red;
 }
 
 .eventsContainer {
